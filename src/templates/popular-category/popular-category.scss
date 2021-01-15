@@ -1,0 +1,37 @@
+.popular-category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.popular-category__item {
+  width: calc(100% / 6);
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 0 6px;
+}
+
+.popular-category__link {
+  &:hover {
+    .popular-category__label {
+      color: #64b0ce;
+    }
+  }
+}
+
+.popular-category__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.popular-category__label {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #212121;
+  text-align: center;
+  transition: all .3s;
+}

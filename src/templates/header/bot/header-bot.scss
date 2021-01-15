@@ -1,0 +1,133 @@
+.header__bot {
+  padding: 10px 0;
+}
+
+.header__bot_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bot_logo {}
+
+.header__bot_phone {}
+
+.header__bot_phone_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1;
+}
+
+.header__bot_phone_item_icon {
+  width: 25px;
+}
+
+.header__bot_phone_item_link {
+  font-size: 20px;
+  color: #004e8d;
+  line-height: 1.3;
+}
+
+.header__bot_btn {
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 211px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 9px 1px rgba(179, 178, 179, 0.75);
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: #289c39;
+    background-image: linear-gradient(to top, #ff6600 0%, #fd692a 100%);
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+
+.header__bot_info {}
+
+.header__bot_info_work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 229px;
+  height: 29px;
+  border-radius: 5px;
+  border: 1px dashed #b4b4b4;
+  background-color: #ffffff;
+  font-weight: 500;
+}
+
+.header__bot_info_call {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  color: #212121;
+  img {
+    margin-right: 3px;
+  }
+}
+
+.header__bot_basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 54px;
+  padding: 8px 8px 8px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #64b0ce;
+}
+
+.header__bot_basket_icon {
+  min-width: 45px;
+}
+
+.header__bot_basket_badge {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+  background-color: #085892;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.header__bot_basket_info {}
+
+.header__bot_basket_info_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.header__bot_basket_info_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.header__bot_basket_info_price_currency {
+  font-size: 24px;
+  color: #ffffff;
+}

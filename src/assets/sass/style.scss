@@ -1,0 +1,36 @@
+/*******************
+Table of contents
+
+## Slick
+## Customs
+## Header
+## Intro
+## Popular Category
+## Footer
+*******************/
+
+
+/* ## Slick
+====================*/
+@import "../../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../../bower_components/slick-carousel/slick/slick-theme.scss";
+
+/* ## Customs
+====================*/
+@import "customs/customs";
+
+/* ## Header
+====================*/
+@import "../../templates/header/header";
+
+/* ## Intro
+====================*/
+@import "../../templates/intro/intro";
+
+/* ## Popular Category
+====================*/
+@import "../../templates/popular-category/popular-category";
+
+/* ## Footer
+====================*/
+@import "../../templates/footer/footer";
