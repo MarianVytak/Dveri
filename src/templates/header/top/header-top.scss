@@ -36,7 +36,7 @@
 }
 
 .header__top_item_label {
-  color: #212121;
+  color: $black;
 }
 
 .header__top_item_badge {
@@ -51,11 +51,11 @@
   border: 1px solid #e7e7e7;
   background-color: #004e8d;
   font-size: 12px;
-  color: #ffffff;
+  color: $white;
 }
 
 .header__top_item_city {
   padding-left: 3px;
   font-size: 16px;
-  color: #212121;
+  color: $black;
 }

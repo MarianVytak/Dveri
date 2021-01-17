@@ -14,7 +14,7 @@
 .popular-category__link {
   &:hover {
     .popular-category__label {
-      color: #64b0ce;
+      color: $main;
     }
   }
 }
@@ -31,7 +31,7 @@
 .popular-category__label {
   margin-top: 15px;
   font-weight: 500;
-  color: #212121;
+  color: $black;
   text-align: center;
   transition: all .3s;
 }

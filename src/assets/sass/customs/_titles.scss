@@ -2,7 +2,14 @@
   margin-bottom: 30px;
   font-weight: 600;
   font-size: 24px;
-  color: #494747;
+  color: $dark;
   text-transform: uppercase;
   letter-spacing: 0.48px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: $black;
 }
