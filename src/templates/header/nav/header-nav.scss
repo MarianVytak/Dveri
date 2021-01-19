@@ -81,6 +81,9 @@
   height: 44px;
   border-radius: 10px;
   background-color: $main;
+  &:hover {
+    background-color: $blue;
+  }
   img {
     width: 35px;
   }
