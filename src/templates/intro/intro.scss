@@ -9,8 +9,6 @@
 }
 
 .intro__item {
-  //position: relative;
-  //display: flex;
   margin: 15px;
   border-radius: 5px;
   overflow: hidden;
@@ -31,6 +29,11 @@
 .intro__item_card {
   position: relative;
   display: flex;
+  &:hover {
+    .intro__item_label {
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.35);
+    }
+  }
 }
 
 .intro__slider {
@@ -105,6 +108,7 @@
   color: $white;
   text-align: center;
   white-space: nowrap;
+  transition: .3s;
 }
 
 .intro {}
