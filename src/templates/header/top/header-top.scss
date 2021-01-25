@@ -39,7 +39,13 @@
 }
 
 .header__top_item_label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: $black;
+  &:hover {
+    color: $main;
+  }
 }
 
 .header__top_item_badge {
@@ -61,4 +67,7 @@
   padding-left: 3px;
   font-size: 16px;
   color: $black;
+  &:hover {
+    color: $main;
+  }
 }

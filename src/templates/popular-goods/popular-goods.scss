@@ -78,6 +78,19 @@
 
 .show-more__link {
   text-align: center;
+  svg {
+    width: 50px;
+    fill: #999999;
+    transition: .3s;
+  }
+  &:hover {
+    .show-more__label {
+      color: $main;
+    }
+    svg {
+      fill: $main;
+    }
+  }
 }
 
 .show-more__label {
@@ -85,6 +98,7 @@
   font-weight: 700;
   font-size: 13px;
   color: #999999;
+  transition: .3s;
 }
 
 .card__prices_right {

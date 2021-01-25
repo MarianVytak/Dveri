@@ -2,39 +2,53 @@ $(function () {
 
     'use strict';
 
+    $('.js-toggle').on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
 
 
-    // $('.section-1__slider_card').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     infinite: true,
-    //     focusOnSelect: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     fade: false,
-    //     arrows: false,
-    //     dots: true,
-    //     asNavFor: '.section-1__slider_img',
-    //     appendDots: $('.section-1__slider__counter'),
-    //     customPaging: function (slider, i) {
-    //         return '<span class="slide-current">' + (i + 1) + '</span>' + '<span>из</span>' + '<span class="slide-length">' + slider.slideCount +'</span>';
-    //     },
-    //     responsive: [
-    //         {
-    //             breakpoint: 9999,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 1200,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 arrows: true,
-    //             }
-    //         }
-    //     ]
-    // });
+    // Modal
+    const body = $('body');
+    const modal = $('.modal');
+    const modalLink = $('.js-modal-link');
+    const modalClose = $('.modal__close');
+    modalLink.on('click', function (e){
+        e.preventDefault();
+        let thisModal = $(this).attr('href');
+        body.addClass('overflow-hidden');
+        $(thisModal).fadeIn();
+    });
+    modalClose.on('click', function (e){
+        e.preventDefault();
+        body.removeClass('overflow-hidden');
+        modal.fadeOut();
+    });
+    modal.click( function(e){
+        if ( $(e.target).closest('.modal__content').length ) {
+            return;
+        }
+        body.removeClass('overflow-hidden');
+        modal.fadeOut();
+    });
 
 
+    // Alert
+    const alertLink = $('.js-alert-link');
+    const alertClose = $('.alert__close');
+    alertLink.on('click', function (e){
+        e.preventDefault();
+        let thisAlert = $(this).attr('href');
+        $(thisAlert).fadeIn();
+        function alertFade() {
+            $(thisAlert).fadeOut();
+        }
+        setTimeout(alertFade, 5000);
+    });
+    alertClose.on('click', function (e){
+        e.preventDefault();
+        let thisAlert = $(this).attr('href');
+        $(thisAlert).fadeOut();
+    });
 
 });
