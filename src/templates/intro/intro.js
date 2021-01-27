@@ -14,6 +14,14 @@ $(function () {
         fade: true,
         arrows: true,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
 

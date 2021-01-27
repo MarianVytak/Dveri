@@ -35,3 +35,34 @@
   text-align: center;
   transition: all .3s;
 }
+
+
+
+@media (max-width: 1200px) {
+  .popular-category {
+    margin: 0 -4px;
+    padding-bottom: 18px;
+  }
+  .popular-category__item {
+    margin-bottom: 12px;
+    padding: 0 4px;
+  }
+  .popular-category__label {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .popular-category {
+    margin: 0 -1px;
+  }
+  .popular-category__item {
+    width: calc(100% / 3);
+    padding: 0 1px;
+  }
+  .popular-category__label {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+}

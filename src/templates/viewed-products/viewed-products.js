@@ -13,21 +13,9 @@ $('.viewed-products__slider').slick({
             }
         },
         {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1,
             }
         }
     ]

@@ -88,3 +88,43 @@
     }
   }
 }
+
+
+
+@media (max-width: 1200px) {
+  .reviews__slider {
+    margin: -15px 0;
+    .slick-slide {
+      padding: 15px 10px;
+    }
+  }
+  .reviews__slider_item {
+    padding: 30px 20px;
+    border: 1px solid #dadada;
+    &:hover {
+      box-shadow: none;
+      border: 1px solid #dadada;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reviews {
+    padding-bottom: 20px;
+  }
+  .reviews__slider {
+    .slick-arrow {
+      top: 203px;
+    }
+  }
+  .reviews__slider_item {
+    padding: 15px 10px;
+  }
+  .reviews__slider_content {
+    min-height: 170px;
+    font-size: 12px;
+  }
+  .reviews__btn {
+    margin-top: 20px;
+  }
+}

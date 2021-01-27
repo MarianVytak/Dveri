@@ -1,4 +1,10 @@
 .header {}
 
+@media (max-width: 767.98px) {
+  .header {
+    display: none;
+  }
+}
+
 @import "top/header-top";
 @import "bot/header-bot";

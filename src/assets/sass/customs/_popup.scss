@@ -49,3 +49,18 @@
     background-image: url(../../../assets/img/icons/popup-triangle.png);
   }
 }
+
+
+
+@media (max-width: 1200px) {
+  .popup {
+    display: none;
+  }
+  .popup-link {
+    &:hover {
+      .popup {
+        display: none;
+      }
+    }
+  }
+}

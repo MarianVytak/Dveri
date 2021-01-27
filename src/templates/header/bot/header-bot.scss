@@ -59,8 +59,6 @@
   }
 }
 
-.header__bot_info {}
-
 .header__bot_info_work {
   display: flex;
   align-items: center;
@@ -335,5 +333,51 @@
 @media (max-height: 800px) {
   .basket__popup_scroll {
     max-height: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__bot_logo {
+    width: 184px;
+  }
+  .header__bot_phone_item_link {
+    font-size: 14px;
+  }
+  .header__bot_phone_item_icon {
+    width: 15px;
+    height: 15px;
+  }
+  .header__bot_btn {
+    .btn {
+      width: 158px;
+      height: 33px;
+      font-size: 14px;
+    }
+  }
+  .header__bot_info_work {
+    width: 139px;
+    height: 23px;
+  }
+  .header__bot_info_call {
+    img {
+      margin-right: 3px;
+    }
+  }
+  .header__bot_basket {
+    width: 120px;
+    height: 47px;
+    padding: 5px 3px 5px 5px;
+  }
+  .header__bot_basket_badge {
+    width: 23px;
+    height: 23px;
+    font-size: 11px;
+  }
+  .header__bot_basket_icon {
+    width: 30px;
+    min-width: 30px;
+  }
+  .header__bot_basket_info_price {
+    font-size: 14px;
   }
 }

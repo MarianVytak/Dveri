@@ -104,3 +104,16 @@
     }
   }
 }
+
+
+
+@media (max-width: 1200px) {
+  .modal__content {
+    padding: 20px;
+  }
+  .modal__reviews {
+    .modal__content {
+      max-width: 758px;
+    }
+  }
+}

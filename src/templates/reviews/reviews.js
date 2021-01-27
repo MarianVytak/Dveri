@@ -9,13 +9,7 @@ $('.reviews__slider').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
             }
         },
         {

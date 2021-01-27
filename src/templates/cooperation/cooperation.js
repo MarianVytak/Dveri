@@ -13,12 +13,6 @@ $('.cooperation__slider').slick({
             }
         },
         {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-        {
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,

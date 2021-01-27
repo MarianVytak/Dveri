@@ -71,3 +71,16 @@
     color: $main;
   }
 }
+
+
+
+@media (max-width: 1200px) {
+  .header__top_left {
+    .header__top_item_label {
+      display: none;
+    }
+  }
+  .header__top_item_label {
+    white-space: nowrap;
+  }
+}

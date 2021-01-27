@@ -81,12 +81,28 @@
   letter-spacing: 0.3px;
 }
 
-.why-choose-us {}
 
-.why-choose-us {}
 
-.why-choose-us {}
-
-.why-choose-us {}
-
-.why-choose-us {}
+@media (max-width: 767.98px) {
+  .why-choose-us__tab {
+    overflow-x: auto;
+  }
+  .why-choose-us__tab_link {
+    width: 83px;
+    min-width: 83px;
+    height: 70px;
+    svg {
+      width: 30px;
+    }
+  }
+  .why-choose-us__tab_link_label {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .why-choose-us__content_item {
+    padding: 15px 0;
+  }
+  .why-choose-us__content_text {
+    font-size: 12px;
+  }
+}

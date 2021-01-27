@@ -23,6 +23,8 @@
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
   color: $dark;
   line-height: 1;
   &:hover {
@@ -103,4 +105,48 @@
 
 .card__prices_right {
   position: relative;
+}
+
+
+
+@media (max-width: 1200px) {
+  .popular-goods__tab_link {
+    flex-direction: column;
+    height: 50px;
+    font-size: 14px;
+    svg {
+      margin-right: 0;
+    }
+  }
+  .popular-goods__content_item {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .popular-goods__tab {
+    overflow-x: auto;
+  }
+  .popular-goods__tab_link {
+    width: 90px;
+    min-width: 90px;
+    font-size: 10px;
+    svg {
+      margin-bottom: 5px;
+    }
+  }
+  .popular-goods__content_item {
+    padding: 10px 0;
+  }
+  .show-more {
+    padding-bottom: 20px;
+  }
+  .show-more__link {
+    svg {
+      width: 38px;
+    }
+  }
+  .show-more__label {
+    font-size: 12px;
+  }
 }

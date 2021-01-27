@@ -50,3 +50,34 @@
   text-align: center;
   transition: .3s;
 }
+
+
+
+@media (max-width: 1200px) {
+  .cooperation__slider_item {
+    padding: 45px 5px;
+  }
+  .cooperation__slider_item_link {
+    &:hover {
+      .cooperation__slider_item_img {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  .cooperation__slider_item_img {
+    border: none;
+  }
+  .cooperation__slider_item_title {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cooperation {
+    padding-bottom: 75px;
+  }
+  .cooperation__slider {
+    margin: -55px 0;
+  }
+}
