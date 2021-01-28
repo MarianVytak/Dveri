@@ -136,14 +136,18 @@
 
 @media (max-width: 767.98px) {
   .footer {
-    padding: 20px 0;
+    padding: 20px 0 70px;
     text-align: center;
   }
   .footer__grid_item {
     width: 100%;
     margin-right: 0;
     &:nth-child(2) {
+      order: 3;
       margin-top: 0;
+    }
+    &:nth-child(4) {
+      order: 4;
     }
   }
   .footer__link {

@@ -2,7 +2,7 @@ $(function () {
 
     'use strict';
 
-    // Пошук в шапці сайта
+    // Пошук в навігації
     $('.navigation__search_close').on('click', function (e){
         e.preventDefault();
         $('.navigation__search').fadeOut();

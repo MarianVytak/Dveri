@@ -1,5 +1,6 @@
 .header__bot {
   padding: 10px 0;
+  background-color: $white;
 }
 
 .header__bot_box {
@@ -82,6 +83,11 @@
   }
   img {
     margin-right: 8px;
+  }
+  span {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
   }
 }
 

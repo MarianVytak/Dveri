@@ -10,6 +10,12 @@
   .slick-arrow {
     top: 217px;
   }
+  .slick-prev {
+    left: 15px;
+  }
+  .slick-next {
+    right: 15px;
+  }
 }
 
 .reviews__slider_item {
@@ -97,6 +103,12 @@
     .slick-slide {
       padding: 15px 10px;
     }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
   }
   .reviews__slider_item {
     padding: 30px 20px;
@@ -116,6 +128,9 @@
     .slick-arrow {
       top: 203px;
     }
+    .slick-slide {
+      padding: 15px 0;
+    }
   }
   .reviews__slider_item {
     padding: 15px 10px;
@@ -123,6 +138,9 @@
   .reviews__slider_content {
     min-height: 170px;
     font-size: 12px;
+    &:before {
+      width: calc(100% - 88px);
+    }
   }
   .reviews__btn {
     margin-top: 20px;

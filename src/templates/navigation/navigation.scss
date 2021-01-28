@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 50px;
+  box-sizing: border-box;
   background-color: $white;
   z-index: 6666;
   &.fixed {
@@ -26,24 +27,6 @@
 
 .navigation__left {
   height: 100%;
-  &:hover {
-    .navigation__catalog_icon_burger {
-      display: none;
-    }
-    .navigation__catalog_icon_arrow {
-      display: flex;
-    }
-    .catalog-menu {
-      visibility: visible;
-      opacity: 1;
-    }
-    .navigation-desktop__list {
-      &:before {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .navigation__catalog {
@@ -58,6 +41,14 @@
   font-size: 20px;
   color: $white;
   letter-spacing: 0.4px;
+  &.active {
+    .navigation__catalog_icon_burger {
+      display: none;
+    }
+    .navigation__catalog_icon_close {
+      display: flex;
+    }
+  }
   img {
     margin-right: 30px;
   }
@@ -68,6 +59,10 @@
 }
 
 .navigation__catalog_icon_arrow {
+  display: none;
+}
+
+.navigation__catalog_icon_close {
   display: none;
 }
 
@@ -378,20 +373,42 @@
 
 
 
-@media (max-width: 1200px) {
-  .navigation {
-    height: 40px;
-  }
+@media (min-width: 1200px) {
   .navigation__left {
     &:hover {
       .navigation__catalog_icon_burger {
-        display: flex;
+        display: none;
       }
       .navigation__catalog_icon_arrow {
-        display: none;
+        display: flex;
+      }
+      .catalog-menu {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
+  .navigation__catalog_icon_close {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    height: 40px;
+    margin: 0 -4px;
+    padding: 0 4px;
+    &.fixed {
+      top: 0;
+      left: 4px;
+      right: 4px;
+      transform: none;
+      .navigation-tablet {
+        height: calc(100vh - 40px);
+      }
+    }
+  }
+  .navigation__left {}
   .navigation__catalog {
     width: 159px;
     font-size: 16px;
@@ -441,6 +458,12 @@
 @media (max-width: 767.98px) {
   .navigation {
     display: none;
+  }
+  .navigation__search_input {
+    input {
+      padding-left: 10px;
+      padding-right: 40px;
+    }
   }
 }
 

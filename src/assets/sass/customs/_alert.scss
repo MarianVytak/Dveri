@@ -51,3 +51,33 @@
   color: $blue;
   text-decoration: underline;
 }
+
+
+
+@media (max-width: 767.98px) {
+  .alert {
+    width: 304px;
+    right: 8px;
+  }
+  .alert__card {
+    grid-template-columns: 65px 1fr;
+    margin-bottom: 5px;
+    padding: 5px 25px 5px 5px;
+  }
+  .alert__close {
+    top: 5px;
+    right: 5px;
+  }
+  .alert__content {
+    padding-left: 5px;
+  }
+  .alert__title {
+    font-size: 12px;
+  }
+  .alert__name {
+    font-size: 12px;
+  }
+  .alert__link {
+    font-size: 12px;
+  }
+}

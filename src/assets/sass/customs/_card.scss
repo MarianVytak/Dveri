@@ -333,6 +333,15 @@
     visibility: visible;
     opacity: 1;
   }
+  .card__setting_item_link {
+    &:hover {
+      border: 1px solid #e7e7e7;
+      background-color: $white;
+      svg {
+        fill: $dark;
+      }
+    }
+  }
   .card__info {
     position: inherit;
     top: auto;
@@ -387,8 +396,5 @@
   }
   .card__info {
     margin-top: 5px;
-  }
-  .card__info_item_text {
-    font-size: 9px;
   }
 }

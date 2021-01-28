@@ -8,6 +8,22 @@ $(function () {
     });
 
 
+    // Скрол на початок сторінки
+    $(document).on('scroll', function(){
+        let documentScroll = $(this).scrollTop();
+        if (documentScroll >= 124) {
+            $('.scroll-top').addClass('active');
+        } else {
+            $('.scroll-top').removeClass('active');
+        }
+    });
+    $('.scroll-top').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
+
+
     // Modal
     const body = $('body');
     const modal = $('.modal');
