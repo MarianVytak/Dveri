@@ -5,9 +5,10 @@ mobileBurger.on('click', function (e){
     e.preventDefault();
     mobileMenu.fadeToggle();
     $(this).toggleClass('active');
+    body.toggleClass('overflow-hidden');
 });
 mobileMenu.click( function(e){
-    if ( $(e.target).closest('.modal__content').length ) {
+    if ( $(e.target).closest('.mobile-menu__content').length ) {
         return;
     }
     body.removeClass('overflow-hidden');

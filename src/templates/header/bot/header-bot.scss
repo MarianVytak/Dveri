@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 5px;
   color: $black;
   &:hover {
     color: $main;
@@ -365,7 +365,9 @@
     height: 23px;
   }
   .header__bot_info_call {
+    margin-top: 2px;
     img {
+      width: 14px;
       margin-right: 3px;
     }
   }
@@ -373,6 +375,9 @@
     width: 120px;
     height: 47px;
     padding: 5px 3px 5px 5px;
+  }
+  .header__bot_basket_info {
+    line-height: 1;
   }
   .header__bot_basket_badge {
     width: 23px;

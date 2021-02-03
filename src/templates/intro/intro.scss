@@ -117,6 +117,21 @@
   .intro {
     display: block;
     padding: 10px 0 20px;
+    .intro__slider .slick-slide div {
+      height: auto;
+    }
+    .intro__slider {
+      height: auto;
+      .slick-list {
+        height: auto;
+      }
+      .slick-track {
+        height: auto;
+      }
+      .slick-slide {
+        height: auto;
+      }
+    }
   }
   .intro__item_card {
     display: none;

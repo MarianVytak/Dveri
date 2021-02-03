@@ -127,6 +127,13 @@
       }
     }
   }
+  .default {
+    .slick-arrow {
+      &:hover {
+        background-color: $main;
+      }
+    }
+  }
 }
 
 @media (max-width: 767.98px) {

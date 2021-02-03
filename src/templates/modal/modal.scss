@@ -50,7 +50,7 @@
 
 .modal__reviews {
   .modal__content {
-    width: 100%;
+    width: calc(100% - 16px);
     max-width: 750px;
   }
   .textarea {
