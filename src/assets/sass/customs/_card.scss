@@ -97,6 +97,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+  padding-top: 1px;
   box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid #e7e7e7;
@@ -325,6 +326,14 @@
       .card__info {
         box-shadow: none;
         border: none;
+      }
+    }
+  }
+  .card__basket {
+    &:hover {
+      border-color: $main;
+      svg {
+        fill: $main;
       }
     }
   }

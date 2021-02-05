@@ -8,6 +8,13 @@ $(function () {
     });
 
 
+    const toggle = $('.toggle__item');
+    toggle.on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+
+
     // Скрол на початок сторінки
     $(document).on('scroll', function(){
         let documentScroll = $(this).scrollTop();
