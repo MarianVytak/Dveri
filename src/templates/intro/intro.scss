@@ -151,6 +151,9 @@
       }
     }
   }
+  .intro__item:nth-child(1) {
+    display: block;
+  }
   .intro__item_card {
     display: none;
   }

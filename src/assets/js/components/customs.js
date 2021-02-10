@@ -8,10 +8,23 @@ $(function () {
     });
 
 
+    // Toggle
     const toggle = $('.toggle__item');
     toggle.on('click', function (e){
         e.preventDefault();
         $(this).toggleClass('active');
+    });
+
+
+    // Accordion
+    const accordionLink = $('.js-accordion-link');
+    // const accordionContent = $('.js-accordion-content');
+    accordionLink.on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        let thisAccordionContent = $(this).attr('href');
+        // accordionContent.slideUp();
+        $(thisAccordionContent).slideToggle();
     });
 
 
